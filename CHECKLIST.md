@@ -29,10 +29,6 @@
 
 **Total: 1,0 ponto**
 
-### Ponto Extra (Desejável):
-- [ ] CI/CD com atualização automática em servidor AWS
-  - *Nota: Requer configuração adicional de CI/CD (GitHub Actions, AWS CodePipeline, etc.)*
-
 ## 3. MONITORAMENTO E TESTES (1,0 ponto) ✅
 
 ### Postman:
@@ -99,15 +95,9 @@
    - Executar collection completa
    - Verificar todos os testes passando
 
-5. **Opcional - CI/CD:**
-   - Configurar GitHub Actions
-   - Configurar deploy automático na AWS
-   - Configurar testes automatizados
-
 ## 📝 Notas Importantes
 
 - Todos os requisitos obrigatórios foram implementados
-- Todos os pontos extras foram implementados
 - O projeto está pronto para entrega
 - Documentação completa no README.md
 

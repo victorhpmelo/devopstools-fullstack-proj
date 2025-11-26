@@ -54,6 +54,40 @@ projeto-devops/
 - Git (para controle de versão)
 - Postman (para testes da API - opcional)
 
+## ⚠️ Verificação Rápida - Docker Desktop
+
+**IMPORTANTE:** Antes de executar o projeto, certifique-se de que o **Docker Desktop está rodando**!
+
+### Verificar se o Docker está rodando:
+
+```powershell
+# Execute no PowerShell
+docker ps
+```
+
+Se você receber um erro como:
+```
+error during connect: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+```
+
+**O Docker Desktop não está rodando!** 
+
+### Solução Rápida:
+
+1. **Abra o Docker Desktop** (procure no menu Iniciar)
+2. **Aguarde** até o ícone na bandeja ficar verde (1-3 minutos)
+3. **Execute novamente:** `docker ps` (deve funcionar sem erro)
+
+### Script de Verificação:
+
+Execute o script incluído no projeto:
+
+```powershell
+.\verificar-docker.ps1
+```
+
+Para mais detalhes, consulte: [INICIAR-DOCKER.md](INICIAR-DOCKER.md)
+
 ## 🚀 Instalação e Execução
 
 ### 1. Clone o Repositório
@@ -224,6 +258,12 @@ O Zabbix está configurado para monitorar:
 2. Faça login com `Admin` / `zabbix`
 3. Configure hosts e templates conforme necessário
 4. O Zabbix Agent já está configurado para monitorar o sistema
+
+### Guias de Configuração
+
+- **Guia Rápido:** `zabbix/GUIA-RAPIDO.md` - Configuração básica em 5 passos
+- **Guia Completo:** `zabbix/CONFIGURAR-HOSTS-TEMPLATES.md` - Instruções detalhadas passo a passo
+- **Solução de Problemas:** `zabbix/SOLUCAO-ERRO-BANCO.md` - Resolver erros de conexão
 
 ## 🧪 Testes com Postman
 
